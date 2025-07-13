@@ -11,5 +11,6 @@ source /usr/local/Ascend/mindie/latest/mindie-service/set_env.sh
 
 export DATA_DIR="$ENV_DIR/data"
 export CORS_ALLOW_ORIGIN="*"
+export HF_ENDPOINT="https://hf-mirror.com"
 
 open-webui serve
