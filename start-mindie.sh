@@ -2,9 +2,12 @@
 
 ENV_DIR=$(dirname "$0")
 cp $ENV_DIR/mindie-config.json /usr/local/Ascend/mindie/latest/mindie-service/conf/config.json
-chmod 640 /usr/local/Ascend/mindie/latest/mindie-service/conf/config.json
 
-cd /usr/local/Ascend/mindie/latest/mindie-service
-source set_env.sh
-cd bin
+source /usr/local/Ascend/ascend-toolkit/set_env.sh
+source /usr/local/Ascend/nnal/atb/set_env.sh
+source /usr/local/Ascend/atb-models/set_env.sh
+source /usr/local/Ascend/mindie/set_env.sh
+source /usr/local/Ascend/mindie/latest/mindie-service/set_env.sh
+
+cd /usr/local/Ascend/mindie/latest/mindie-service/bin
 ./mindieservice_daemon

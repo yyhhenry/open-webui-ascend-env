@@ -60,8 +60,8 @@
     "interNodeKmcKsfMaster": "tools/pmt/master/ksfa",
     "interNodeKmcKsfStandby": "tools/pmt/standby/ksfb",
     "ModelDeployConfig": {
-      "maxSeqLen": 32768,
-      "maxInputTokenLen": 32768,
+      "maxSeqLen": 8192,
+      "maxInputTokenLen": 8192,
       "truncation": false,
       "ModelConfig": [
         {
@@ -83,7 +83,7 @@
       "cacheBlockSize": 128,
 
       "maxPrefillBatchSize": 50,
-      "maxPrefillTokens": 32768,
+      "maxPrefillTokens": 8192,
       "prefillTimeMsPerReq": 150,
       "prefillPolicyType": 0,
 
