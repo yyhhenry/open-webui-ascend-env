@@ -45,7 +45,7 @@
   "BackendConfig": {
     "backendName": "mindieservice_llm_engine",
     "modelInstanceNumber": 1,
-    "npuDeviceIds": [[6]],
+    "npuDeviceIds": [[2]],
     "tokenizerProcessNumber": 8,
     "multiNodesInferEnabled": false,
     "multiNodesInferPort": 1120,
