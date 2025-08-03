@@ -1,5 +1,11 @@
 {
-  "Version": "1.0.0",
+  "Version": "1.1.0",
+  "LogConfig": {
+    "logLevel": "Info",
+    "logFileSize": 20,
+    "logFileNum": 20,
+    "logPath": "logs/mindservice.log"
+  },
 
   "ServerConfig": {
     "ipAddress": "127.0.0.1",
@@ -36,10 +42,7 @@
     "interCommPkPwd": "security/grpc/pass/key_pwd.txt",
     "interCommTlsCrlPath": "security/grpc/certs/",
     "interCommTlsCrlFiles": ["server_crl.pem"],
-    "openAiSupport": "vllm",
-    "tokenTimeout": 600,
-    "e2eTimeout": 600,
-    "distDPServerEnabled": false
+    "openAiSupport": "vllm"
   },
 
   "BackendConfig": {
@@ -72,7 +75,7 @@
           "cpuMemSize": 5,
           "npuMemSize": -1,
           "backendType": "atb",
-          "trustRemoteCode": true
+          "trustRemoteCode": false
         }
       ]
     },
