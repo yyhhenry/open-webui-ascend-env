@@ -14,4 +14,6 @@ export DATA_DIR="$ENV_DIR/data"
 export CORS_ALLOW_ORIGIN="*"
 export HF_ENDPOINT="https://hf-mirror.com"
 
+echo "Open: http://localhost:8080"
+
 open-webui serve

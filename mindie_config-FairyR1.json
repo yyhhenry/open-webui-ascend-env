@@ -94,7 +94,7 @@
       "decodePolicyType": 0,
 
       "maxBatchSize": 200,
-      "maxIterTimes": 512,
+      "maxIterTimes": 8192,
       "maxPreemptCount": 0,
       "supportSelectBatch": false,
       "maxQueueDelayMicroseconds": 5000

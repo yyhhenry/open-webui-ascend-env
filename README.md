@@ -42,6 +42,9 @@ curl -H "Accept: application/json" -H "Content-type: application/json"  -X POST 
 
 # 启动WebUI
 # 安装uv可通过: curl -LsSf https://astral.sh/uv/install.sh | sh
+# 可能会下载一些东西，完成后访问"http://localhost:8080"
+# 注册admin@admin.com和admin_password或任意账号
+# 管理员面板-设置-外部连接中，设置OpenAI为"http://127.0.0.1:1025/v1"
 uv sync
 bash launch_webui.sh
 ```
