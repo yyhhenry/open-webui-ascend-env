@@ -1,7 +1,8 @@
 #!/bin/bash
 
 ENV_DIR=$(dirname "$0")
-source $ENV_DIR/.venv/bin/activate
+cd $ENV_DIR
+source .venv/bin/activate
 
 source /usr/local/Ascend/ascend-toolkit/set_env.sh
 source /usr/local/Ascend/nnal/atb/set_env.sh
