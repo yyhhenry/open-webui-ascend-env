@@ -15,7 +15,7 @@
     "metricsPort": 1027,
     "allowAllZeroIpListening": false,
     "maxLinkNum": 1000,
-    "httpsEnabled": true,
+    "httpsEnabled": false,
     "fullTextEnabled": false,
     "tlsCaPath": "security/ca/",
     "tlsCaFile": ["ca.pem"],
@@ -48,7 +48,7 @@
   "BackendConfig": {
     "backendName": "mindieservice_llm_engine",
     "modelInstanceNumber": 1,
-    "npuDeviceIds": [[0, 1, 2, 3]],
+    "npuDeviceIds": [[0, 1]],
     "tokenizerProcessNumber": 8,
     "multiNodesInferEnabled": false,
     "multiNodesInferPort": 1120,
@@ -63,15 +63,15 @@
     "interNodeKmcKsfMaster": "tools/pmt/master/ksfa",
     "interNodeKmcKsfStandby": "tools/pmt/standby/ksfb",
     "ModelDeployConfig": {
-      "maxSeqLen": 2560,
-      "maxInputTokenLen": 2048,
+      "maxSeqLen": 8192,
+      "maxInputTokenLen": 8192,
       "truncation": false,
       "ModelConfig": [
         {
           "modelInstanceType": "Standard",
-          "modelName": "llama_65b",
-          "modelWeightPath": "/data/atb_testdata/weights/llama1-65b-safetensors",
-          "worldSize": 4,
+          "modelName": "FairyR1",
+          "modelWeightPath": "/root/autodl-tmp/FairyR1-32B",
+          "worldSize": 2,
           "cpuMemSize": 5,
           "npuMemSize": -1,
           "backendType": "atb",

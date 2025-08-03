@@ -48,7 +48,7 @@
   "BackendConfig": {
     "backendName": "mindieservice_llm_engine",
     "modelInstanceNumber": 1,
-    "npuDeviceIds": [[2]],
+    "npuDeviceIds": [[0, 1]],
     "tokenizerProcessNumber": 8,
     "multiNodesInferEnabled": false,
     "multiNodesInferPort": 1120,
@@ -69,9 +69,9 @@
       "ModelConfig": [
         {
           "modelInstanceType": "Standard",
-          "modelName": "qwen",
-          "modelWeightPath": "/root/autodl-tmp/Qwen3-0.6B",
-          "worldSize": 1,
+          "modelName": "FairyR1",
+          "modelWeightPath": "/root/autodl-tmp/FairyR1-32B",
+          "worldSize": 2,
           "cpuMemSize": 5,
           "npuMemSize": -1,
           "backendType": "atb",
