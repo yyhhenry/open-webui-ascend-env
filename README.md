@@ -6,7 +6,11 @@ Open WebUI Environment with Ascend support.
 
 使用环境：[AutoDL MindIE 1.0.0环境](https://www.autodl.com/docs/huawei_mindie/)
 
+使用模型：[FairyR1-32B · 模型库](https://www.modelscope.cn/models/PKU-DS-LAB/FairyR1-32B)
+
 硬件需求：910B2x鲲鹏920 * 2卡
+
+终端要求：必须为bash，不可使用zsh
 
 ### 基本内容下载
 
