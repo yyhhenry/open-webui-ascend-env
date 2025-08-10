@@ -59,7 +59,7 @@ cd open-webui-ascend-env
 bash start-mindie.sh
 
 # 测试接口 1025
-curl -X POST -H "Content-type: application/json" -d '{"model": "FairyR1","messages": [{"role": "user", "content": "介绍一下杭州"}],"max_tokens": 128}' http://127.0.0.1:1025/v1/chat/completions
+curl -X POST -H "Content-type: application/json" -d '{"model": "FairyR1", "messages": [{"role": "user", "content": "一句话介绍杭州"}], "max_tokens": 32}' http://127.0.0.1:1025/v1/chat/completions
 ```
 
 ### 启动包装器
@@ -76,7 +76,7 @@ uv run main.py
 
 
 # 测试接口 1075
-curl -N -X POST -H "Content-type: application/json" -d '{"model": "FairyR1", "messages": [{"role": "user", "content": "介绍一下杭州"}], "max_tokens": 128, "stream": true}' http://127.0.0.1:1075/v1/chat/completions
+curl -N -X POST -H "Content-type: application/json" -d '{"model": "FairyR1", "messages": [{"role": "user", "content": "一句话介绍杭州"}], "max_tokens": 32, "stream": true}' http://127.0.0.1:1075/chat/completions
 ```
 
 ### 启动对话界面
@@ -87,6 +87,6 @@ cd open-webui-ascend-env
 # 安装uv可通过: curl -LsSf https://astral.sh/uv/install.sh | sh
 # 可能会下载一些东西，完成后访问"http://localhost:8080"
 # 注册admin@admin.com和admin_password或任意账号
-# 管理员面板-设置-外部连接中，设置OpenAI为"http://127.0.0.1:1075/v1"
+# 管理员面板-设置-外部连接中，设置OpenAI为"http://127.0.0.1:1075"
 bash launch_webui.sh
 ```
